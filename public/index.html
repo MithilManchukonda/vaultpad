@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultPad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>VaultPad</h1>
+    <p class="tagline">Private notes. No signup. Just one code.</p>
+
+    <div class="row">
+      <input type="password" id="codeInput" placeholder="Enter your secret code">
+      <button id="openBtn">Open Pad</button>
+    </div>
+
+    <textarea id="notes" placeholder="Your notes will appear here..."></textarea>
+
+    <div class="row">
+      <button id="saveBtn">Save</button>
+      <button id="deleteBtn" class="danger">Delete Pad</button>
+    </div>
+
+    <p id="status"></p>
+  </main>
+
+  <script src="crypto.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
